@@ -1,0 +1,262 @@
+/*Main Styeling*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+/*Start Global Setting*/
+:root {
+    --main-bg-color : #FAFAFA;
+    --bolt-color : #0095F6;
+    --color:#262626;
+    --maian-transtion : 0.3s;
+    --po-paddind:10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+.container {
+    padding-right: 80px !important;
+    padding-left: 80px !important;
+}
+/*End Global Setting*/
+/*Start Nav Bar*/
+nav {
+    position: sticky !important;
+    top: 0;
+    z-index: 400;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    border-bottom:  1px solid #EEE;
+}
+nav .logo {
+    width: 105px;
+}
+nav .search {
+    display: inline;
+    width: 300px;
+}
+.search input {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 1px solid #EEE;
+}
+nav ul li {
+    margin-top: 5px;
+}
+nav ul a {
+    color: var(--color);
+    padding-right: 20px;
+    margin-top: 10px;
+}
+nav ul {
+    margin-bottom: 0;
+}
+nav li a i {
+    font-size: 25px;
+}
+nav .profile {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: var(--maian-transtion);
+    -webkit-transition: var(--maian-transtion);
+    -moz-transition: var(--maian-transtion);
+    -ms-transition: var(--maian-transtion);
+    -o-transition: var(--maian-transtion);
+    cursor: pointer;
+}
+.profile img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.profile:hover .setting {
+    display: block;
+}
+nav .profile .setting {
+    display: none;
+    width: 230px;
+    position: absolute;
+    background-color: white;
+    right: 0px;
+    top: 46px;
+    z-index: 500;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding-left: 0;
+    transition: var(--maian-transtion);
+    -webkit-transition: var(--maian-transtion);
+    -moz-transition: var(--maian-transtion);
+    -ms-transition: var(--maian-transtion);
+    -o-transition: var(--maian-transtion);
+    box-shadow: 5px 2px 15px -6px #0000004d;
+}
+nav .profile .setting::before {
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    border-color: transparent transparent #f7f7f7 transparent;
+    top: -20px;
+    right: 6px;
+}
+nav .profile .setting li{
+    padding: 6px;
+}
+nav .profile .setting li i {
+    margin-right: 5px;
+}
+nav .profile .setting li a {
+    text-decoration: none;
+    transition: var(--maian-transtion);
+    -webkit-transition: var(--maian-transtion);
+    -moz-transition: var(--maian-transtion);
+    -ms-transition: var(--maian-transtion);
+    -o-transition: var(--maian-transtion);
+}
+nav .profile .setting li:last-child {
+    border-top:  1px solid #EEE;
+}
+nav .profile .setting li a:hover {
+    padding-left: 10px;
+    color: black;
+}
+/*End Nav Bar*/
+/*Start Content Post*/
+.parent {
+    position: relative;
+}
+.parent .content {
+    width: 65%;
+}
+.content .stories{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    padding-left: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid #EEE;
+    margin-top: 30px;
+}
+.stories .user-stories {
+    width: 100px;
+    padding: 10px;
+    display: inline-block;
+}
+.user-stories img {
+    width: 60px;
+    height: 60px;
+    transform: translate(10px , 10px);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid  #C13584;
+    -webkit-transform: translate(10px , 10px);
+    -moz-transform: translate(10px , 10px);
+    -ms-transform: translate(10px , 10px);
+    -o-transform: translate(10px , 10px);
+}
+.user-stories .name {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #9f9e9e;
+}
+.content .post {
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid #EEE;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.post .pro-inf {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 15px;
+    background-color: white;
+}
+.pro-inf  img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.post-img img{
+    max-width: 100%;
+}
+.post .caption {
+    position: relative;
+    background-color: white;
+}
+.caption .icon {
+    width: 100%;
+    background-color: white;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: var(--po-paddind);
+    padding-right: var(--po-paddind);
+}
+.icon i {
+    font-size: 25px;
+}
+.caption .description {
+    font-size: 13px;
+    color: #4c4c4c;
+    margin-top: 10px;
+    padding-bottom: var(--po-paddind);
+    padding-left: 15px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #EEE;
+}
+.caption input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    height: 45px;
+    color: #4c4c4c;
+    font-size: 15px;
+}
+/*End Content Post*/
+
