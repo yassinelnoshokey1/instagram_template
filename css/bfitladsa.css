@@ -57,7 +57,7 @@
 
 /*=============Menue Icon=========== */
 @media (max-width: 560px) {
-#fixed-header .icon-menu_open_black_24dp-1:before {
+#fixed-header.sticky  .icon-menu_open_black_24dp-1:before {
         background-image: url(https://media.zid.store/f484e27e-6972-4ce0-bdd4-347cef81f209/2a593a59-a4ba-4cc3-986d-da7e780f4910.svg);
     }
 }
@@ -77,10 +77,11 @@
 }
 /*=============Search Icon=========== */
 @media (max-width: 560px) {
-#fixed-header .search-header .sm-search-icon .icon-search:before {
+#fixed-header.sticky   .search-header .sm-search-icon .icon-search:before {
         background-image: url(https://media.zid.store/f484e27e-6972-4ce0-bdd4-347cef81f209/a2c2c229-ccba-49c3-8ef7-826df8aec322.svg);
     }
 }
+
 
 .search-header .sm-search-icon .icon-search:before {
     content: "";
