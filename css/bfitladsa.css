@@ -434,6 +434,11 @@ footer.d-flex.flex-column,.footer-store-section.store-section.footer-theme-bg-pr
     font-size: 15px !important;
 }
 }
+.footer-about-us-links-div p a {
+    color: white !important;
+    font-size: 15px !important;
+    font-weight: 400;
+}
 .footer-about-us-links-div.footer-about-us-div p {
     font-size: 17px !important;
 }
