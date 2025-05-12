@@ -429,6 +429,11 @@ footer.d-flex.flex-column,.footer-store-section.store-section.footer-theme-bg-pr
     fill:#ffffff !important;
     border: 2px solid #ffffff !important;
 }
+@media(max-width:767px){
+  .footer-about-us-links-div.footer-about-us-div p {
+    font-size: 15px !important;
+}
+}
 .footer-about-us-links-div.footer-about-us-div p {
     font-size: 17px !important;
 }
